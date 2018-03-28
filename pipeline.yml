@@ -1,0 +1,14 @@
+resources:
+  - name: concourse-practice-git
+    type: git
+    source:
+      uri: https://github.com/seiyab/concourse-practice.git
+      branch: master
+
+jobs:
+  - name: concourse-practice
+    public: true
+    plan:
+      - get: concourse-practice-git
+      - task: hello-world
+        file: concourse-practice-git/ci/hello-world.yml
