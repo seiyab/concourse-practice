@@ -13,3 +13,5 @@ jobs:
         trigger: true
       - task: hello-world
         file: concourse-practice-git/ci/hello-world.yml
+      - task: mvn
+        file: concourse-practice-git/ci/mvn.yml
