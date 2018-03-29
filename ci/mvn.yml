@@ -8,5 +8,5 @@ image_resource:
     insecure_registries: [ "concourse-registry:5000" ]
 
 run:
-  path: echo
-  args: [hello world]
+  path: which
+  args: [mvn]
