@@ -10,5 +10,6 @@ jobs:
     public: true
     plan:
       - get: concourse-practice-git
+        trigger: true
       - task: hello-world
         file: concourse-practice-git/ci/hello-world.yml
