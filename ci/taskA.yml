@@ -1,0 +1,14 @@
+---
+platform: linux
+
+image_resource:
+  type: docker-image
+  source:
+    repository: debian
+
+outputs:
+- name: foo
+
+run:
+  path: touch
+  args: [foo/blank.txt]
